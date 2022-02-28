@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuizplusApi</name>
+    </assembly>
+    <members>
+        <member name="M:QuizplusApi.Controllers.DashboardController.GetRunningQuizes(System.String)">
+            <summary>
+            Get running Quizes
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.DashboardController.GetStatus">
+            <summary>
+            Get overall status
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.DashboardController.GetLogInSummaryByDate(System.Int32)">
+            <summary>
+            Get date wise Login summary
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.DashboardController.GetLogInSummaryByMonth(System.Int32)">
+            <summary>
+            Get month wise Login summary
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.DashboardController.GetBrowserCount(System.Int32)">
+            <summary>
+            Get Browser Login summary
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.DashboardController.GetPlatformCount(System.Int32)">
+            <summary>
+            Get Platform Login summary
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.DashboardController.GetQuizCountByDate(System.Int32)">
+            <summary>
+            Get date wise Quiz Attendance count
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.DashboardController.GetUserCountByQuiz(System.Int32)">
+            <summary>
+            Get Quiz wise user attendance count
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.MenuController.GetMenuList">
+            <summary>
+            Get App Menu List
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.MenuController.DeleteSingleMenu(System.Int32)">
+            <summary>
+            Delete Menu by Id
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.MenuController.CreateMenu(QuizplusApi.Models.Menu.AppMenu)">
+            <summary>
+            Create App Menu
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.MenuController.UpdateMenu(QuizplusApi.Models.Menu.AppMenu)">
+            <summary>
+            Update App Menu
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.MenuController.GetSidebarMenu(System.Int32)">
+            <summary>
+            App Side bar menus
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.MenuController.GetAllMenu(System.Int32)">
+            <summary>
+            Get all menus for assinging to Role
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.MenuController.MenuAssign(QuizplusApi.ViewModels.Menu.MenuOperation)">
+            <summary>
+            Assign App Menu
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuizList">
+            <summary>
+            Get Quizes with Questions count
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuizesForReports">
+            <summary>
+            Get Quizes with Questions count
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.DeleteQuiz(System.Int32)">
+            <summary>
+            Delete Quiz with questions by QuizId
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.CreateQuizTopic(QuizplusApi.Models.Quiz.QuizTopic)">
+            <summary>
+            Create Quiz Topic
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.UpdateQuizTopic(QuizplusApi.Models.Quiz.QuizTopic)">
+            <summary>
+            Update Quiz Topic
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.StartQuiz(QuizplusApi.Models.Quiz.QuizTopic)">
+            <summary>
+            Start Quiz
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.StopQuiz(QuizplusApi.Models.Quiz.QuizTopic)">
+            <summary>
+            Stop Quiz
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuizParticipantOptionList">
+            <summary>
+            Get Quiz Participant Option List
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuizMarksOptionList">
+            <summary>
+            Get Quiz Marks Option List
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.CreateQuizParticipants(System.Collections.Generic.List{QuizplusApi.Models.Quiz.QuizParticipant})">
+            <summary>
+            Create Quiz Participants
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuizParticipantsEmail(System.Int32)">
+            <summary>
+            Get Quiz Participants Comma seperated emails
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuizWithQuestionCount">
+            <summary>
+            Get Quizes with Question Count
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuizQuestionList(System.Int32)">
+            <summary>
+            Get Quiz Question List
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetSingleQuestion(System.Int32,System.Int32)">
+            <summary>
+            Get single question according to serial no.
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.DeleteSingleQuizQuestion(System.Int32)">
+            <summary>
+            Delete Quiz Question by id
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.CreateQuizQuestion(QuizplusApi.Models.Question.QuizQuestion)">
+            <summary>
+            Create Quiz Question
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.UpdateQuizQuestion(QuizplusApi.Models.Question.QuizQuestion)">
+            <summary>
+            Update Quiz Question
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.UploadQuestionImage">
+            <summary>
+            Question Image upload
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.CreateQuizResponseInitial(QuizplusApi.Models.Quiz.QuizResponseInitial)">
+            <summary>
+            Create Quiz Response Initial
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.CreateQuizResponseDetail(QuizplusApi.Models.Quiz.QuizResponseDetail)">
+            <summary>
+            Create Quiz Response Detail
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.UpdateQuizTakenTime(QuizplusApi.ViewModels.Quiz.QuizTimeTaken)">
+            <summary>
+            Update Quiz Taken time
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.UploadQuestionCsv">
+            <summary>
+            Question CSV upload
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.ReadQuestionUploadCsv(QuizplusApi.ViewModels.Question.CsvUploadHelper)">
+            <summary>
+            Read Question Upload CSV
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetCertificateTemplates">
+            <summary>
+            Get certificate templates.
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.UploadCertificateImage">
+            <summary>
+            Certificate Image upload
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.CreateCertificateTemplate(QuizplusApi.Models.Quiz.CertificateTemplate)">
+            <summary>
+            Create certificate template
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.UpdateCertificateTemplate(QuizplusApi.Models.Quiz.CertificateTemplate)">
+            <summary>
+            Update Quiz Question
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.DeleteSingleTemplate(System.Int32)">
+            <summary>
+            Delete certificate template
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetSingleTemplate(System.Int32)">
+            <summary>
+            Get Single certificate template
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuestionType">
+            <summary>
+            Get Question Types
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuestionLavel">
+            <summary>
+            Get Question Lavels
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.GetQuestionCategory">
+            <summary>
+            Get Question Categories.
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.DeleteSingleQuestionCategory(System.Int32)">
+            <summary>
+            Delete Question Category
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.CreateQuestionCategory(QuizplusApi.Models.Question.QuestionCategory)">
+            <summary>
+            Create Question Category
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.UpdateQuestionCategory(QuizplusApi.Models.Question.QuestionCategory)">
+            <summary>
+            Update Question Category
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.QuizController.CreateQuizPayment(QuizplusApi.Models.Quiz.QuizPayment)">
+            <summary>
+            Create Quiz Payment
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.GetFinishedExamInfo(System.Int32)">
+            <summary>
+            Get finished exam status
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.GetFinishedExamResult(System.Int32)">
+            <summary>
+            Get finished exam result
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.GetPendingExamine(System.Int32)">
+            <summary>
+            Get pending examine data
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.UpdateMarksObtain(System.Int32,System.Decimal)">
+            <summary>
+            Update Quiz Marks Obtain
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.GetResults">
+            <summary>
+            Get all exam result
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.GetResultsById(System.Int32)">
+            <summary>
+            Get result by user id
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.GetFilteredQuiz(System.Int32)">
+            <summary>
+            Get filtered Quiz list for individual user
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.GetResultByTopic(System.Int32)">
+            <summary>
+            Get results by topic
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.ReportController.GetReportType">
+            <summary>
+            Get Report Types
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.SendPasswordMail(QuizplusApi.ViewModels.Email.ForgetPassword)">
+            <summary>
+            Sent Password Email
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.SendWelcomeMail(QuizplusApi.ViewModels.Email.WelcomeRequest)">
+            <summary>
+            Sent Welcome Email
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.SentEmailToCheckedStudents(QuizplusApi.ViewModels.Email.ReExamRequest)">
+            <summary>
+            Sent Email to checked students
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.SendInvitationMail(System.Collections.Generic.List{QuizplusApi.ViewModels.Email.Invitation})">
+            <summary>
+            Sent Invitation Email
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.GetSiteSettings">
+            <summary>
+            Get Site Settings
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.UpdateSettings(QuizplusApi.Models.Others.SiteSettings)">
+            <summary>
+            Update Settings
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.UpdateClientUrl(QuizplusApi.ViewModels.User.UserInfo)">
+            <summary>
+            Update Client Url
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.UploadLogo">
+            <summary>
+            Site Logo upload
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.UploadFavicon">
+            <summary>
+            Site Favicon upload
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.GetFaqList">
+            <summary>
+            Get FAQ List
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.DeleteFaq(System.Int32)">
+            <summary>
+            Delete FAQ by Id
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.CreateFaq(QuizplusApi.Models.Others.Faq)">
+            <summary>
+            Create Faq
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.SettingsController.UpdateFaq(QuizplusApi.Models.Others.Faq)">
+            <summary>
+            Update Faq
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.GetLoginInfo(System.String,System.String)">
+            <summary>
+            Get Log in Detail
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.GetUserInfoForForgetPassword(System.String)">
+            <summary>
+            Get User Info for Forget password option
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.StudentRegistration(QuizplusApi.Models.User.Users)">
+            <summary>
+            Student Registration
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.CreateLoginHistory(QuizplusApi.Models.User.LogHistory)">
+            <summary>
+            Create History Log
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.UpdateLoginHistory(System.String)">
+            <summary>
+            Update Login History
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.GetBrowseList">
+            <summary>
+            Get Browsing List
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.GetUserList">
+            <summary>
+            Get User List
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.GetSingleUser(System.Int32)">
+            <summary>
+            Get Single User by id
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.DeleteSingleUser(System.Int32)">
+            <summary>
+            Delete User by User Id
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.CreateUser(QuizplusApi.Models.User.Users)">
+            <summary>
+            Create User
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.UpdateUser(QuizplusApi.Models.User.Users)">
+            <summary>
+            Update User
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.UpdateUserProfile(QuizplusApi.ViewModels.User.UserInfo)">
+            <summary>
+            Update User Profile
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.ChangeUserPassword(QuizplusApi.ViewModels.User.UserInfo)">
+            <summary>
+            Change User Password
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.Upload">
+            <summary>
+            Profile picture upload
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.GetUserRoleList">
+            <summary>
+            Get Role List
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.DeleteSingleRole(System.Int32)">
+            <summary>
+            Delete Role by id
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.CreateUserRole(QuizplusApi.Models.User.UserRole)">
+            <summary>
+            Create User Role
+            </summary>
+        </member>
+        <member name="M:QuizplusApi.Controllers.UserController.UpdateUserRole(QuizplusApi.Models.User.UserRole)">
+            <summary>
+            Update User Role
+            </summary>
+        </member>
+    </members>
+</doc>
